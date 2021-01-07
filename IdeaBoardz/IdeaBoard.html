@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href='asset/css/IdeaBoard.css' rel='stylesheet' type='text/css' />
+    <link href='https://use.fontawesome.com/releases/v5.6.1/css/all.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='asset/js/IdeaBoard.js'></script>
+    <title>My Idea board</title>
+</head>
+<body>
+    <div class="main-page">
+        <div>
+            <div class="logoContainer">
+                <a class="logo" href="/" title="Ideaboardz">
+                    <img alt="Ideaboardz" src="asset/img/ideaboardz.png">
+                </a>
+            </div>
+        </div>
+        <div class="filters">
+            <input id="search" placeholder="🔍start typing to filter notes" type="text">
+            <div class="sort">
+                <label>View Section</label>
+                <select name="note[section_id]" id="note_section_id">
+                    <option value="">All Sections</option>
+                    <option value="1">Title 1</option>
+                    <option value="2">Title 2</option>
+                    <option value="3">Title 3</option>
+                </select>
+                <label>Sort By</label>
+                <select name="sortBy" id="sortBy">
+                    <option value="created time">created time</option>
+                    <option value="votes">votes</option>
+                </select>
+            </div>
+        </div>
+        <div class="board">
+
+            <h2 class="text-center" id="boardTitle" title="Idea board">Sachin Bhattad</h2>
+            <div class="board-container">
+                <div class="column">
+                    <div class="column-title-container yellow ui-droppable" data-color="yellow" id="section-one">
+                        <span contenteditable="true" class="title">Title 1</span>
+                        <span class="add-note">
+                            <button class="icon-btn add-button fas fa-plus-circle"></button>
+                        </span>
+                    </div>
+                    <div class="note">
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="column-title-container blue ui-droppable" data-color="blue" id="section-two">
+                        <span contenteditable="true" class="title">Title 2</span>
+                        <span class="add-note">
+                            <button class="icon-btn add-button fas fa-plus-circle"></button>
+                        </span>
+                    </div>
+                    <div class="note">
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="column-title-container orange ui-droppable" data-color="orange" id="section-third">
+                        <span contenteditable="true" class="title">Title 3</span>
+                        <span class="add-note">
+                            <button class="icon-btn add-button fas fa-plus-circle"></button>
+                        </span>
+                    </div>
+                    <div class="note">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='popup-bg editor-popup'>
+        <div class='editor'>
+            <a class="close-button close fas fa-times" title="Close Note"></a>
+
+            <div class='main'>
+                <textarea></textarea>
+            </div>
+            <div>
+                <a class="delete-button delete fas fa-trash-alt" title="Delete Note"> Delete</a>
+                <a class="save-button save fas fa-save" title="Save Note"> Save</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+﻿body {
+    background: #f2f5f7 none repeat scroll 0 0;
+    font-family: 'Delius', 'Roboto', helvetica, cursive;
+}
+
+.main-page {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 2px;
+}
+
+.margin-left {
+    margin-left: 0px;
+}
+
+.logo-container {
+    float: left;
+    width: 24%;
+    min-width: 250px;
+}
+
+.logo {
+    margin: 15px 0 15px 15px;
+}
+
+.filters {
+    float: left;
+    width: 99%;
+    min-width: 250px;
+}
+
+.board {
+    background-color: white;
+    border: #0c0b0beb solid 10px;
+    border-radius: 5px;
+    overflow: auto;
+    width: 95%;
+    min-height: 643px;
+    text-align: center;
+}
+
+.main {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.filters .sort {
+    float: right;
+    padding-right: 20px;
+}
+
+#search {
+    width: 30%;
+    float: left;
+    margin: 0 0 20px 10px;
+}
+
+.text-center {
+    text-align: center
+}
+
+.column {
+    flex: 0 0 33.3%;
+    border-right: 1px dotted #aaa;
+    padding: 1rem;
+}
+
+.column-title-container {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.board-container {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.column-title-container span.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.add-button {
+    color: #502dbc;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 1.2em;
+    background: none;
+}
+
+.note{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.textarea {
+    resize: none;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.titles {
+    display: flex;
+}
+
+.title {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sticky-note {
+    position: relative;
+    flex: 0 0 48%;
+    min-height: 100px;
+    margin-bottom: 1rem;
+    font-size: 11px;
+    box-shadow: 2px 3px 0px 1px rgba(0,0,0, 0.1);
+    padding: 3px;
+    cursor: pointer;
+    animation: expand .3s linear;
+}
+.editor textarea {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+}
+
+.editor .buttons {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editor .buttons button {
+        display: block;
+}
+
+.popup-bg {
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup-bg .editor {
+        background: #fff;
+        box-shadow: 9px 9px 0px 0px rgba(0,0,0,0.3);
+        border: 1px solid #aaa;
+        width: 400px;
+        height: 300px;
+        padding: 3rem;
+        margin: 100px auto;
+}
+.add-note {
+    cursor: pointer;
+}
+
+.column:last-child {
+        border-right: none
+}
+
+.add-note:hover {
+    color: red;
+}
+
+
+.add-note:active {
+    color: maroon;
+}
+@keyframes expand {
+    from {
+        transform: scale(0);
+        opacity: 0.1;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.column-title-container span.title {
+        font-size: 24px;
+        font-weight: bold;
+}
+.column:nth-child(1) .sticky-note {
+    background: rgb(172, 199, 233);
+}
+
+.column:nth-child(3) .sticky-note {
+    background: rgb(20, 199, 0);
+}
+
+.column:nth-child(2) .sticky-note {
+    background: rgb(247, 231, 52);
+}
+
+.delete-button {
+    cursor: pointer;
+    float: right;
+    margin: 5px 0;
+    float: left;
+    color:red
+}
+.save-button {
+    cursor: pointer;
+    float: right;
+    margin: 5px 0;
+    color:green
+}
+.close-button {
+    float: right;
+    position: relative;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+    float: right;
+    margin: 5px 0;
+    color: black
+}
