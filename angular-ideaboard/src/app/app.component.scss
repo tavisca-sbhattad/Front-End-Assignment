@@ -1,19 +1,31 @@
 .main {
+background: #fff;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: -7px;
 
-    .title {
+    .section {
         min-width:423px;
-        border-right: 1px solid #ccc;
         margin-left: 12px;
         padding-right: 12px;
+		flex: 0 0 33.3%;
+		border-right: 1px dotted #aaa;
+		padding: 1rem;
+		
 
-        .topic-note {
+        .section-note {
             background: rgb(250, 210, 31);
             padding: 1rem;
             margin: 1rem 0.3rem;
         }
     }
 }
-button {
+.add-button {
+    color: #502dbc;
+    border: none;
     cursor: pointer;
+    overflow: hidden;
+    font-size: 0.9em;
+    background: none;
 }

@@ -1,1 +1,24 @@
 <app-header></app-header>
+<div class='main'>
+  <div class='section' *ngFor='let section of sections'>
+  <div>
+    <h2 class='section-title'>
+      {{section.title}}
+	       <button class="icon-btn add-button fas fa-plus-circle" (click)='addNote(topic);' ></button>
+    </h2>
+    <div class='section-notes-container'>
+      <!-- <div class='topic-note' *ngFor='let note of topic.notes'> -->
+        <!-- {{note.text}} -->
+
+        <!-- <div class='note-meta' align='end'> -->
+          <!-- <button mat-icon-button (click)='deleteNote(note.id, topic)'> -->
+            <!-- <mat-icon>delete</mat-icon> -->
+          <!-- </button> -->
+        <!-- </div> -->
+      <!-- </div> -->
+ 
+    </div>
+	
+  </div>
+  
+</div>
